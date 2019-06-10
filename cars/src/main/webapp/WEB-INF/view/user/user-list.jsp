@@ -100,7 +100,10 @@
 </script>
     <script type="text/html" id="opt">
     <button type="button" lay-event="edit" class="layui-btn layui-btn-sm">修改</button>
+
+    {{# if(d.powerid!=1){ }}
     <button type="button" lay-event="del" class="layui-btn layui-btn-sm layui-btn-danger">删除</button>
+        {{# } }}
 </script>
     <script type="text/html" id="staTpl">
         <input type="checkbox" value="{{d.id}}" lay-text="可用|禁用" lay-skin="switch" lay-filter="staFilter" {{d.status==1?'checked':''}}>
