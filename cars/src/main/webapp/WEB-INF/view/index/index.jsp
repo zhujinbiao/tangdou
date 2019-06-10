@@ -41,7 +41,7 @@
                         <dd>
                             <a onclick="xadmin.open('个人信息','user/toEdit.do?id=${loginUser.id}')">个人信息</a></dd>
                         <dd>
-                            <a onclick="xadmin.open('修改密码','http://www.baidu.com')">修改密码</a></dd>
+                            <a onclick="xadmin.open('修改密码','user/toPwd.do',600,400)">修改密码</a></dd>
                         <dd>
                             <a href="exit.do">退出</a></dd>
                     </dl>
@@ -87,7 +87,7 @@
                                     <cite>车辆列表</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('订单列表1','order-list1.html')">
+                                <a onclick="xadmin.add_tab('品牌管理','brand/toList.do',true)">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>品牌管理</cite></a>
                             </li>

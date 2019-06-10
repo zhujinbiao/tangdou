@@ -89,4 +89,13 @@ public class UserServiceImpl implements UserService {
 
         return userMapper.selectByPrimaryKey(id);
     }
+
+    @Override
+    public ResBean checkPwd(User user) {
+        user.setPassword(MD5Util.MD5(user.getPassword()));
+        if (userMapper.checkPwd(user)!=null){
+            return new ResBean(0);
+        }
+        return new ResBean(1);
+    }
 }

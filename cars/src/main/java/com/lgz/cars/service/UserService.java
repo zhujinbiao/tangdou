@@ -22,4 +22,7 @@ public interface UserService {
 
     User getById(Integer id);
 
+    ResBean checkPwd(User user);
+
+
 }
